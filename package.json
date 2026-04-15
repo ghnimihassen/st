@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch index.ts",
+    "start": "bun run index.ts",
+    "seed": "bun run src/seed.ts"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.12",
+    "bcryptjs": "^3.0.3",
+    "hono": "^4.12.9",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.3.3",
+    "zod": "^4.3.6"
+  }
+}
